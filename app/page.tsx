@@ -1,15 +1,14 @@
-import HeroLayout from "@/components/Home/HeroLayout";
+import HomeLayout from "@/components/Home/HomeLayout";
 import HeroSection from "@/components/Home/HeroSection";
 import Navbar from "@/components/Navbar/Navbar";
-
 
 const Home = () => {
   return (
     <>
-      <HeroLayout>
+      <HomeLayout>
         <Navbar />
         <HeroSection />
-      </HeroLayout>
+      </HomeLayout>
     </>
   );
 };
