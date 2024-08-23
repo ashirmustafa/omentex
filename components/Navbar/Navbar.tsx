@@ -4,21 +4,23 @@ import Logo from "../Logo";
 import NavLink from "./NavLink";
 import { CiMenuKebab } from "react-icons/ci";
 import { RxCross1 } from "react-icons/rx";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isSideBarOpened, setIsSideBarOpened] = useState<boolean>(false);
   return (
     <>
-      <div className="flex justify-between items-center bg-transparent py-5">
+      <div className="flex justify-between items-center bg-transparent py-5 relative">
+        
         <Logo />
-        <div className="md:flex hidden items-center lg:gap-6">
+        <div className="md:flex hidden items-center md:gap-6">
           <NavLink path="/" label="Home" />
           <NavLink path="/services" label="Services" />
           <NavLink path="/about-us" label="About Us" />
           <NavLink
             path="/projects"
             label="Projects"
-            className="border border-white px-2 bg-white text-black hover:after:w-0 hover:bg-black hover:text-white transition-all"
+            className="border border-white px-3 bg-white text-black hover:after:w-0 hover:bg-black hover:text-white transition-all"
           />
         </div>
         <div
