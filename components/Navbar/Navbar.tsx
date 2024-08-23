@@ -11,7 +11,6 @@ const Navbar = () => {
   return (
     <>
       <div className="flex justify-between items-center bg-transparent py-5 relative">
-        
         <Logo />
         <div className="md:flex hidden items-center md:gap-6">
           <NavLink path="/" label="Home" />
@@ -32,13 +31,17 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`fixed top-0 right-0 h-full bg-black text-white sm:w-[370px] w-full transform ${
+        className={`fixed top-0 right-0 h-full bg-black text-white sm:w-[370px] w-full transform z-[999] ${
           isSideBarOpened ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >
         <div className="p-6">
           <div className="flex justify-between">
-            <RxCross1 onClick={() => setIsSideBarOpened(false)} size={30} />
+            <RxCross1
+              onClick={() => setIsSideBarOpened(false)}
+              size={30}
+              className=""
+            />
           </div>
 
           <div className="flex flex-col items-center gap-10 pt-10">
