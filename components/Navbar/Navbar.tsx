@@ -19,7 +19,7 @@ const Navbar = () => {
           <NavLink
             path="/projects"
             label="Projects"
-            className="border border-white px-3 bg-white text-black hover:after:w-0 hover:bg-black hover:text-white transition-all"
+            className="border border-white px-3 bg-white text-black hover:after:w-0 after:h-0 hover:bg-black hover:text-white transition-all"
           />
         </div>
         <div
