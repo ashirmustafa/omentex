@@ -1,6 +1,6 @@
 "use client";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import AnimateOnLoad from "../AnimateOnLoad";
+import AnimateOnLoad from "../../AnimateOnLoad";
 
 const HeroSection = () => {
   return (
