@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center bg-transparent py-5 relative">
         <Logo />
         <div className="md:flex hidden items-center gap-4">
-          <div className="flex items-center md:gap-6 border border-[#999999] py-3 px-5 rounded-full">
+          <div className="flex items-center md:gap-6 border-2 border-[#999999] py-3 px-5 rounded-full">
             <NavLink path="/" label="Home" />
             <NavLink path="/services" label="Services" />
             <NavLink path="/about-us" label="About Us" />

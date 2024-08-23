@@ -1,14 +1,26 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { IoLogoDesignernews } from "react-icons/io5";
 
 const ServiceCard = () => {
+  const [isHovered, setIsHovered] = useState<boolean>(false);
   return (
-    <div className="flex gap-3 px-5 py-7 bg-white rounded-md shadow-lg xl:max-w-[30%] w-full">
-      <IoLogoDesignernews  size={30}/>
+    <div
+      className="flex gap-3 px-5 py-7 bg-white rounded-md shadow-lg lg:max-w-[32%] w-full"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <IoLogoDesignernews size={40} />
       <div>
-        <h1 className="text-xl font-bold">UX Research</h1>
-        <p>
+        <h1
+          className={`text-xl font-bold select-none  transition-all duration-500 ${
+            isHovered ? "tracking-widest scale-105 ml-3" : ""
+          }`}
+        >
+          UX Research
+        </h1>
+        <p className="select-none">
           Explore our range of robust cloud services for scalable and secure
           business solutions.
         </p>
