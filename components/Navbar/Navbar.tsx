@@ -27,7 +27,7 @@ const Navbar = () => {
             </button>
           </div>
           <button
-            className="w-16 h-16 border-4 border-white rounded-full text-white flex items-center justify-center text-[10px] hover:scale-110 transition-all"
+            className="w-16 h-16 border-2 border-white rounded-full text-white flex items-center justify-center text-[10px] hover:scale-110 transition-all duration-1000 hover:rotate-[360deg] hover:font-bold hover:bg-white hover:text-black "
             onClick={() => router.push("/order-now")}
           >
             Order <br /> Now
