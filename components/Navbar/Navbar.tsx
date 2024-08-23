@@ -14,15 +14,23 @@ const Navbar = () => {
     <>
       <div className="flex justify-between items-center bg-transparent py-5 relative">
         <Logo />
-        <div className="md:flex hidden items-center md:gap-6 border border-[#999999] py-3 px-5 rounded-full">
-          <NavLink path="/" label="Home" />
-          <NavLink path="/services" label="Services" />
-          <NavLink path="/about-us" label="About Us" />
+        <div className="md:flex hidden items-center gap-4">
+          <div className="flex items-center md:gap-6 border border-[#999999] py-3 px-5 rounded-full">
+            <NavLink path="/" label="Home" />
+            <NavLink path="/services" label="Services" />
+            <NavLink path="/about-us" label="About Us" />
+            <button
+              className="border border-white px-3 py-1 bg-white text-black hover:bg-black hover:text-white transition-all rounded-full"
+              onClick={() => router.push("/projects")}
+            >
+              Projects
+            </button>
+          </div>
           <button
-            className="border border-white px-3 py-1 bg-white text-black hover:bg-black hover:text-white transition-all rounded-full"
-            onClick={() => router.push("/projects")}
+            className="w-16 h-16 border-4 border-white rounded-full text-white flex items-center justify-center text-[10px] hover:scale-110 transition-all"
+            onClick={() => router.push("/order-now")}
           >
-            Projects
+            Order <br /> Now
           </button>
         </div>
         <div
@@ -49,9 +57,15 @@ const Navbar = () => {
 
           <div className="flex flex-col items-center gap-10 pt-10">
             <NavLink path="/" label="Home" />
-            <NavLink path="/projects" label="Projects" />
             <NavLink path="/services" label="Service" />
             <NavLink path="/about-us" label="About Us" />
+            <NavLink path="/projects" label="Projects" />
+            <button
+              className="text-lg text-[#999999] hover:text-white flex items-center justify-center "
+              onClick={() => router.push("/order-now")}
+            >
+              Order Now
+            </button>
           </div>
         </div>
       </div>
