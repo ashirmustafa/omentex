@@ -11,9 +11,7 @@ const NavLink: React.FC<NavLinkProps> = ({ label, path, className }) => {
     <>
       <Link
         href={path}
-        className={
-          `text-lg relative after:bg-secondary text-[#999999] hover:text-secondary after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer ${className}`
-        }
+        className={`text-lg relative after:bg-secondary text-primaryLight hover:text-secondary after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 cursor-pointer ${className}`}
       >
         {label}
       </Link>

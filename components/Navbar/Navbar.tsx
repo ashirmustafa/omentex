@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center bg-transparent py-5 relative">
         <Logo />
         <div className="md:flex hidden items-center gap-4">
-          <div className="flex items-center md:gap-6 border-2 border-[#999999] py-3 px-5 rounded-full">
+          <div className="flex items-center md:gap-6 border-2 border-primaryLight py-3 px-5 rounded-full">
             <NavLink path="/" label="Home" />
             <NavLink path="/services" label="Services" />
             <NavLink path="/about-us" label="About Us" />
@@ -62,7 +62,7 @@ const Navbar = () => {
             <NavLink path="/about-us" label="About Us" />
             <NavLink path="/projects" label="Projects" />
             <button
-              className="text-lg text-[#999999] hover:text-secondary flex items-center justify-center "
+              className="text-lg text-primaryLight hover:text-secondary flex items-center justify-center "
               onClick={() => router.push("/order-now")}
             >
               Order Now

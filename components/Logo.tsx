@@ -5,7 +5,7 @@ const Logo = () => {
   return (
     <Link
       href="/"
-      className="font-semibold text-3xl relative z-50 text-[#999999]"
+      className="font-semibold text-3xl relative z-50 text-primaryLight"
     >
       OMENTEX
     </Link>

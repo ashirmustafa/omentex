@@ -14,7 +14,7 @@ const ContactUsHeroSection = () => {
             limits of technology
           </h1> */}
           <GlitchText firstText="Connect with us" secondText="" />
-          <p className="text-[#999999] text-center md:mt-5 mt-3 md:text-base lg:text-xl text-sm md:px-0 px-10 lg:max-w-[600px] max-w-full">
+          <p className="text-primaryLight text-center md:mt-5 mt-3 md:text-base lg:text-xl text-sm md:px-0 px-10 lg:max-w-[600px] max-w-full">
             Complete the form to schedule a demo or ask questions about the ways
             we can support your business goals.
           </p>

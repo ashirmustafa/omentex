@@ -13,7 +13,7 @@ const HeroSection = () => {
             firstText="Transcend the"
             secondText="limits of technology"
           />
-          <p className="text-[#999999] text-center md:mt-5 mt-3 md:text-base lg:text-xl text-sm md:px-0 px-10">
+          <p className="text-primaryLight text-center md:mt-5 mt-3 md:text-base lg:text-xl text-sm md:px-0 px-10">
             From AI-powered finance solutions to innovative cloud services.
           </p>
           <div className="flex md:flex-row flex-col md:gap-10 gap-6">

@@ -30,8 +30,7 @@ const GlitchText: React.FC<GlitchTextProps> = ({ firstText, secondText }) => {
         "2px 0 red, -2px 0 blue",
         "-2px 0 green, 2px 0 purple",
         "4px 0 red, -4px 0 blue",
-        "0 0 10px #fff",
-        "none",
+        "0 0 10px red, 0 0 20px blue",
       ],
       transform: [
         "translate(0, 0)",
@@ -41,7 +40,7 @@ const GlitchText: React.FC<GlitchTextProps> = ({ firstText, secondText }) => {
         "translate(4px, -4px) scaleX(1)",
         "translate(0, 0)",
       ],
-      color: ["#fff", "#fff", "#fff", "#fff", "#fff"],
+      color: ["#fff", "#fff", "#fff", "#fff"],
       transition: {
         duration: 0.3,
         repeat: 1,
@@ -52,7 +51,7 @@ const GlitchText: React.FC<GlitchTextProps> = ({ firstText, secondText }) => {
 
   return (
     <motion.h1
-      className="relative text-secondary md:text-3xl lg:text-5xl xl:text-7xl text-lg font-bold text-center leading-10"
+      className="relative text-white md:text-3xl lg:text-5xl xl:text-7xl text-lg font-bold text-center leading-10"
       initial="initial"
       animate={glitch ? "glitch" : "initial"}
     >
@@ -64,11 +63,11 @@ const GlitchText: React.FC<GlitchTextProps> = ({ firstText, secondText }) => {
         style={{ clipPath: "inset(0 0 0 0)" }}
       >
         {firstText} <br />
-        {secondText} 
+        {secondText}
       </motion.span>
       {/* Main text */}
       {firstText} <br />
-        {secondText} 
+      {secondText}
     </motion.h1>
   );
 };

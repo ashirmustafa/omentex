@@ -21,6 +21,7 @@ const config = {
       colors: {
         primary: 'var(--primary-color)',
         secondary: 'var(--secondary-color)',
+        primaryLight: 'var(--primaryLight-color)',
       },
       borderRadius: {
         lg: "var(--radius)",
