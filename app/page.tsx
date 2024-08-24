@@ -1,4 +1,4 @@
-import HomeLayout from "@/components/Home/HomeLayout";
+import HeroSectionLayout from "@/components/Home/HeroSectionLayout";
 import HeroSection from "@/components/Home/Hero/HeroSection";
 import Navbar from "@/components/Navbar/Navbar";
 import ServicesSection from "@/components/Home/Services/ServicesSection";
@@ -6,10 +6,10 @@ import ServicesSection from "@/components/Home/Services/ServicesSection";
 const Home = () => {
   return (
     <>
-      <HomeLayout>
+      <HeroSectionLayout scrollHref="#services">
         <Navbar />
         <HeroSection />
-      </HomeLayout>
+      </HeroSectionLayout>
       <ServicesSection />
     </>
   );

@@ -19,6 +19,7 @@ const Navbar = () => {
             <NavLink path="/" label="Home" />
             <NavLink path="/services" label="Services" />
             <NavLink path="/about-us" label="About Us" />
+            <NavLink path="/contact-us" label="Contact Us" />
             <button
               className="border border-white px-3 py-1 bg-white text-black hover:bg-black hover:text-white transition-all rounded-full"
               onClick={() => router.push("/projects")}

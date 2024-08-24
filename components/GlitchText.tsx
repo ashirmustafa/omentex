@@ -1,7 +1,12 @@
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 
-const GlitchText: React.FC = () => {
+interface GlitchTextProps {
+  firstText: string;
+  secondText: string;
+}
+
+const GlitchText: React.FC<GlitchTextProps> = ({ firstText, secondText }) => {
   const [glitch, setGlitch] = useState(false);
 
   useEffect(() => {
@@ -36,7 +41,7 @@ const GlitchText: React.FC = () => {
         "translate(4px, -4px) scaleX(1)",
         "translate(0, 0)",
       ],
-      color: ["#fff", "#000", "#fff", "#000", "#fff"],
+      color: ["#fff", "#fff", "#fff", "#fff", "#fff"],
       transition: {
         duration: 0.3,
         repeat: 1,
@@ -58,12 +63,12 @@ const GlitchText: React.FC = () => {
         animate={glitch ? "glitch" : "initial"}
         style={{ clipPath: "inset(0 0 0 0)" }}
       >
-        Transcend the <br />
-        limits of technology
+        {firstText} <br />
+        {secondText} 
       </motion.span>
       {/* Main text */}
-      Transcend the <br />
-      limits of technology
+      {firstText} <br />
+        {secondText} 
     </motion.h1>
   );
 };
