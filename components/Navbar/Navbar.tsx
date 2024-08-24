@@ -21,14 +21,14 @@ const Navbar = () => {
             <NavLink path="/about-us" label="About Us" />
             <NavLink path="/contact-us" label="Contact Us" />
             <button
-              className="border border-white px-3 py-1 bg-white text-black hover:bg-black hover:text-white transition-all rounded-full"
+              className="border border-seconday px-3 py-1 bg-[#fffff2] text-primary hover:bg-primary hover:text-secondary transition-all rounded-full"
               onClick={() => router.push("/projects")}
             >
               Projects
             </button>
           </div>
           <button
-            className="w-16 h-16 border-2 border-white rounded-full text-white flex items-center justify-center text-[10px] hover:scale-110 transition-all duration-1000 hover:rotate-[360deg] hover:font-bold hover:bg-white hover:text-black hover:tracking-[3px] "
+            className="w-16 h-16 border-2 border-seconday rounded-full text-secondary flex items-center justify-center text-[10px] hover:scale-110 transition-all duration-1000 hover:rotate-[360deg] hover:font-bold hover:bg-secondary hover:text-primary hover:tracking-[3px] "
             onClick={() => router.push("/order-now")}
           >
             Order <br /> Now
@@ -38,12 +38,12 @@ const Navbar = () => {
           className="md:hidden block relative"
           onClick={() => setIsSideBarOpened(true)}
         >
-          <CiMenuKebab color="#ffffff" size={40} />
+          <CiMenuKebab className="text-secondary" size={40} />
         </div>
       </div>
 
       <div
-        className={`fixed top-0 right-0 h-full bg-black text-white sm:w-[370px] w-full transform z-[999] ${
+        className={`fixed top-0 right-0 h-full bg-primary text-secondary sm:w-[370px] w-full transform z-[999] ${
           isSideBarOpened ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >
@@ -62,7 +62,7 @@ const Navbar = () => {
             <NavLink path="/about-us" label="About Us" />
             <NavLink path="/projects" label="Projects" />
             <button
-              className="text-lg text-[#999999] hover:text-white flex items-center justify-center "
+              className="text-lg text-[#999999] hover:text-secondary flex items-center justify-center "
               onClick={() => router.push("/order-now")}
             >
               Order Now

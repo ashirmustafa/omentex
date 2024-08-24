@@ -7,7 +7,7 @@ const ServiceCard = () => {
   const [isHovered, setIsHovered] = useState<boolean>(false);
   return (
     <div
-      className="flex gap-3 px-5 py-7 bg-white rounded-md shadow-lg lg:max-w-[32%] w-full"
+      className="flex gap-3 px-5 py-7 bg-secondary rounded-md shadow-lg lg:max-w-[32%] w-full"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

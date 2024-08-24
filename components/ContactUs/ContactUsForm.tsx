@@ -7,7 +7,7 @@ interface InputFieldProps {
 
 const InputField: React.FC<InputFieldProps> = ({ label, placeHolder }) => (
   <div className="flex flex-col w-full">
-    <label htmlFor="" className="text-white">
+    <label htmlFor="" className="text-secondary">
       {label}
     </label>
     <input
@@ -24,7 +24,7 @@ const ContactUsForm = () => {
   return (
     <div
       id="contact-form"
-      className="max-w-[1760px] w-full mx-auto lg:px-0 px-5"
+      className="max-w-[1760px] w-full mx-auto lg:px-0 px-5 bg-secondary"
     >
       <div className="flex gap-10 py-20 lg:flex-nowrap flex-wrap items-center">
         {/* left */}
@@ -45,14 +45,14 @@ const ContactUsForm = () => {
             please review our portal here.
           </p>
           <div className="flex lg:justify-start justify-center">
-            <button className="bg-black text-white px-5 py-2 hover:bg-white hover:text-black border border-black mt-8 transition-colors">
+            <button className="bg-primary text-secondary px-5 py-2 hover:bg-secondary hover:text-primary border border-primary mt-8 transition-colors">
               Apply Now
             </button>
           </div>
         </div>
         {/* right */}
-        <div className="lg:max-w-[60%] max-w-full w-full bg-black px-5">
-          <h1 className="lg:text-3xl md:text-xl text-lg font-semibold lg:pt-6 pt-3 text-white">
+        <div className="lg:max-w-[60%] max-w-full w-full bg-primary px-5">
+          <h1 className="lg:text-3xl md:text-xl text-lg font-semibold lg:pt-6 pt-3 text-secondary">
             Contact Us
           </h1>
 
@@ -90,7 +90,7 @@ const ContactUsForm = () => {
               </div>
             </div>
             <button
-              className="bg-white px-7 py-2 text-center text-black mt-14 mb-6 w-full"
+              className="bg-secondary px-7 py-2 text-center text-primary mt-14 mb-6 w-full"
               type="submit"
             >
               Submit

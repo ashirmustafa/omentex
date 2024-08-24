@@ -1,5 +1,5 @@
 import Link from "next/link";
-import FloatingScrollButton from "../FloatingScrollButton";
+import FloatingScrollButton from "./FloatingScrollButton";
 
 interface HeroSectionLayoutProps {
   children: React.ReactNode;
@@ -10,7 +10,7 @@ const HeroSectionLayout: React.FC<HeroSectionLayoutProps> = ({
   children,
   scrollHref,
 }) => {
-  // bg-[#fffff2]
+  // bg-[#fffff2ff2]
   return (
     <div className="min-h-screen h-full bg-primary 2xl:px-20 xl:px-14 md:px-10 px-3 relative">
       <div className="max-w-[1760px] w-full mx-auto">{children}</div>

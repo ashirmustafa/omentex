@@ -52,7 +52,7 @@ const GlitchText: React.FC<GlitchTextProps> = ({ firstText, secondText }) => {
 
   return (
     <motion.h1
-      className="relative text-white md:text-3xl lg:text-5xl xl:text-7xl text-lg font-bold text-center leading-10"
+      className="relative text-secondary md:text-3xl lg:text-5xl xl:text-7xl text-lg font-bold text-center leading-10"
       initial="initial"
       animate={glitch ? "glitch" : "initial"}
     >
