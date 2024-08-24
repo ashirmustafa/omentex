@@ -8,7 +8,7 @@ const ContactUsHeroSection = () => {
   return (
     <AnimateOnLoad>
       <div className="relative select-none h-full">
-        <div className="pt-48 flex h-full justify-center flex-col items-center">
+        <div className="flex h-screen justify-center flex-col items-center">
           {/* <h1 className="text-secondary md:text-3xl lg:text-5xl xl:text-7xl text-lg font-bold text-center leading-10 glitch">
             Transcend the <br />
             limits of technology

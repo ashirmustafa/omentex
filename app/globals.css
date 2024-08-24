@@ -6,10 +6,10 @@
   --primary-color: #17141a;
   --secondary-color: #fffff2;
   --primaryLight-color: #bfbfbf;
-  
 }
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--secondary-color);
 }
 

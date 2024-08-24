@@ -12,7 +12,7 @@ const GlitchText: React.FC<GlitchTextProps> = ({ firstText, secondText }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setGlitch((prev) => !prev);
-    }, 5000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, []);

@@ -8,7 +8,6 @@ const ContactUs = () => {
   return (
     <>
       <HeroSectionLayout scrollHref="#contact-form">
-        <Navbar />
         <ContactUsHeroSection />
       </HeroSectionLayout>
       <ContactUsForm />

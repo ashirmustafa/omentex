@@ -7,8 +7,8 @@ import GlitchText from "../../GlitchText";
 const HeroSection = () => {
   return (
     <AnimateOnLoad>
-      <div className="relative select-none">
-        <div className="pt-48 flex h-full justify-center flex-col items-center">
+      <div className="relative select-none h-full">
+        <div className="flex h-screen justify-center flex-col items-center">
           <GlitchText
             firstText="Transcend the"
             secondText="limits of technology"
