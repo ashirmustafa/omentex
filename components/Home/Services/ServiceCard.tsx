@@ -15,7 +15,9 @@ const ServiceCard = () => {
       <div>
         <h1
           className={`text-xl font-bold select-none  transition-all duration-500 ${
-            isHovered ? "tracking-widest scale-105 translate-x-3" : ""
+            isHovered
+              ? "tracking-widest scale-105 translate-x-3 font-extrabold"
+              : ""
           }`}
         >
           UX Research

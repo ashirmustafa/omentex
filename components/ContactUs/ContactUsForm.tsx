@@ -26,7 +26,7 @@ const ContactUsForm = () => {
       id="contact-form"
       className="max-w-[1760px] w-full mx-auto lg:px-0 px-5"
     >
-      <div className="flex gap-10 py-20 lg:flex-nowrap flex-wrap">
+      <div className="flex gap-10 py-20 lg:flex-nowrap flex-wrap items-center">
         {/* left */}
         <div className="lg:max-w-[40%] max-w-full w-full">
           <h1 className="2xl:text-6xl xl:text-4xl lg:text-2xl md:text-xl text-lg font-semibold">
@@ -78,9 +78,19 @@ const ContactUsForm = () => {
                   placeHolder="Enter your company name"
                 />
               </div>
+              <div className="flex justify-between lg:gap-9 lg:flex-nowrap flex-wrap">
+                <InputField
+                  label="Email *"
+                  placeHolder="Enter your email address"
+                />
+                <InputField
+                  label="Company Name"
+                  placeHolder="Enter your company name"
+                />
+              </div>
             </div>
             <button
-              className="bg-white px-7 py-2 text-center text-black my-6 w-full"
+              className="bg-white px-7 py-2 text-center text-black mt-14 mb-6 w-full"
               type="submit"
             >
               Submit
