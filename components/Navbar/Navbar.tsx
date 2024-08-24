@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className="relative">
       <div className="bg-primary fixed top-0 left-0 right-0 z-40">
-        <div className="flex justify-between items-center py-5 mx-auto max-w-[1760px] w-full">
+        <div className="flex justify-between items-center py-5 mx-auto max-w-[1760px] pl-5 pr-2 w-full">
           <Logo />
           <div className="md:flex hidden items-center gap-4">
             <div className="flex items-center md:gap-6 border-2 border-primaryLight py-3 px-5 rounded-full">
@@ -21,7 +21,7 @@ const Navbar = () => {
               <NavLink path="/about-us" label="About Us" />
               <NavLink path="/contact-us" label="Contact Us" />
               <button
-                className="border border-secondary px-3 py-1 bg-[#fffff2] text-primary hover:bg-primary hover:text-secondary transition-all rounded-full"
+                className="border border-secondary px-3 font-extrabold py-1 bg-[#fffff2] text-primary hover:bg-primary hover:text-secondary transition-all rounded-full"
                 onClick={() => router.push("/projects")}
               >
                 Projects

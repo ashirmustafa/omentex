@@ -7,10 +7,9 @@ const NotFound = () => {
   return (
     <>
       <div className="h-screen  bg-primary flex flex-col items-center justify-center text-secondary text-3xl">
-        <h1 className="md:text-8xl text-2xl font-semibold pb-10 ">OMENTEX</h1>
-        <h1 className="font-thin pb-3">404: Page not Found</h1>
+        <h1 className="lg:text-8xl sm:text-4xl text-xl font-extrabold pb-3">Page not Found</h1>
         <div
-          className="text-sm cursor-pointer font-bold underline"
+          className="text-xl cursor-pointer font-medium underline"
           onClick={() => router.back()}
         >
           Click here to return
