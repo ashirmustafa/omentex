@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: #20023f;
+  --primary-color: #000000;
   --secondary-color: #fffff2;
   --primaryLight-color: #bfbfbf;
 }
@@ -12,4 +12,7 @@ html {
   scroll-behavior: smooth;
   background-color: var(--secondary-color);
 }
-
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
