@@ -1,32 +1,45 @@
 "use client";
 import Link from "next/link";
 import React, { useState } from "react";
-import { IoLogoDesignernews } from "react-icons/io5";
+import { IconType } from "react-icons";
 
-const ServiceCard = () => {
+interface ServiceCardProps {
+  title: string;
+  description: string;
+  Icon: IconType;
+  path: string;
+}
+
+const ServiceCard: React.FC<ServiceCardProps> = ({
+  title,
+  description,
+  Icon,
+  path,
+}) => {
   const [isHovered, setIsHovered] = useState<boolean>(false);
+
   return (
     <div
       className="flex gap-3 px-5 py-7 bg-secondary rounded-md shadow-lg lg:max-w-[32%] w-full"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <IoLogoDesignernews size={40} />
+      {/* Render the icon using JSX */}
+      <Icon className="text-4xl -mt-1" />
       <div>
-        <h1
-          className={`text-xl font-bold select-none  transition-all duration-500 ${
-            isHovered
-              ? "tracking-widest scale-105 translate-x-3 font-extrabold"
-              : ""
-          }`}
-        >
-          UX Research
-        </h1>
-        <p className="select-none">
-          Explore our range of robust cloud services for scalable and secure
-          business solutions.
-        </p>
-        <Link href="services/ux-research" className="underline font-semibold">
+        <div className="flex flex-col gap-2">
+          <h1
+            className={`text-xl font-bold select-none transition-all duration-500 ${
+              isHovered
+                ? "tracking-widest scale-105 translate-x-3 font-extrabold"
+                : ""
+            }`}
+          >
+            {title}
+          </h1>
+          <p className="select-none pt-2">{description}</p>
+        </div>
+        <Link href={`services/${path}`} className="underline font-semibold">
           Learn More
         </Link>
       </div>

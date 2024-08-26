@@ -29,7 +29,7 @@ const ContactUsForm = () => {
       <div className="flex gap-10 py-20 lg:flex-nowrap flex-wrap items-center">
         {/* left */}
         <div className="lg:max-w-[40%] max-w-full w-full">
-          <h1 className="2xl:text-6xl xl:text-4xl lg:text-2xl md:text-xl text-lg font-semibold">
+          <h1 className="2xl:text-6xl xl:text-4xl lg:text-2xl md:text-xl text-lg text-primary font-semibold">
             We are here to help
           </h1>
           <p className="lg:text-lg md:text-base text-sm lg:pt-4 pt-1 font-medium">
