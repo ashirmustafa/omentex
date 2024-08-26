@@ -17,7 +17,7 @@ const Navbar = () => {
           <div className="md:flex hidden items-center gap-4">
             <div className="flex items-center md:gap-6 border-2 border-primaryLight py-3 px-5 rounded-full">
               <NavLink path="/" label="Home" />
-              <NavLink path="/services" label="Services" />
+              <NavLink path="/#services" label="Services" />
               <NavLink path="/about-us" label="About Us" />
               <NavLink path="/contact-us" label="Contact Us" />
               <button

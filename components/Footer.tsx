@@ -16,7 +16,7 @@ interface SocialButtonProps {
 const SocialButton: React.FC<SocialButtonProps> = ({ href, Icon }) => (
   <>
     <Link href={href}>
-      <Icon />
+      <Icon size={30} />
     </Link>
   </>
 );
@@ -78,7 +78,7 @@ const Footer = () => {
                 placeholder="Email Address"
               />
               <BsArrowRightCircleFill
-                className="absolute right-4 top-[10px] cursor-pointer"
+                className="absolute right-4 top-[10px] cursor-pointer text-primary"
                 size={30}
               />
             </div>
