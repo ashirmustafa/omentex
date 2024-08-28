@@ -1,19 +1,33 @@
-import React from "react";
+"use client";
+import React, { FormEvent, useState } from "react";
+import axios from "axios";
+import { validateHeaderName } from "http";
 
 interface InputFieldProps {
+  name: string;
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   label: string;
   placeHolder: string;
 }
 
-const InputField: React.FC<InputFieldProps> = ({ label, placeHolder }) => (
+const InputField: React.FC<InputFieldProps> = ({
+  label,
+  placeHolder,
+  value,
+  onChange,
+  name,
+}) => (
   <div className="flex flex-col w-full">
     <label htmlFor="" className="text-secondary">
       {label}
     </label>
     <input
       type="text"
-      name=""
-      id=""
+      value={value}
+      name={name}
+      onChange={onChange}
+      id={name}
       placeholder={placeHolder}
       className="bg-white placeholder:text-gray-700 px-4 py-2 border-gray-400 outline-none w-full"
     />
@@ -21,6 +35,44 @@ const InputField: React.FC<InputFieldProps> = ({ label, placeHolder }) => (
 );
 
 const ContactUsForm = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    companyName: "",
+    message: "",
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+const clearInputField = () => {
+  setFormData({
+    firstName: "",
+    lastName: "",
+    email: "",
+    companyName: "",
+    message: "",
+  })
+};
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    try {
+
+      const response = await axios.post(
+        "http://localhost:3000/api/contact-us",
+        formData
+      );
+      console.log("Form submitted successfully: ", formData);
+      clearInputField();
+    } catch (error) {
+      console.log("Error submitting form", error);
+    }
+  };
   return (
     <div
       id="contact-form"
@@ -56,36 +108,47 @@ const ContactUsForm = () => {
             Contact Us
           </h1>
 
-          <form className="mt-6">
+          <form className="mt-6" onSubmit={handleSubmit}>
             <div className="flex flex-col gap-6">
               <div className="flex justify-between lg:gap-9 lg:flex-nowrap flex-wrap">
                 <InputField
+                  name="firstName" // Pass the name prop
                   label="First Name *"
                   placeHolder="Enter your first name"
+                  value={formData.firstName}
+                  onChange={handleInputChange}
                 />
                 <InputField
+                name="lastName"  // Pass the name prop
                   label="Last Name *"
                   placeHolder="Enter your last name"
+                  value={formData.lastName}
+                  onChange={handleInputChange}
                 />
               </div>
               <div className="flex justify-between lg:gap-9 lg:flex-nowrap flex-wrap">
                 <InputField
+                name="email"  // Pass the name prop
                   label="Email *"
                   placeHolder="Enter your email address"
+                  value={formData.email}
+                  onChange={handleInputChange}
                 />
                 <InputField
+                name="companyName"  // Pass the name prop
                   label="Company Name"
                   placeHolder="Enter your company name"
+                  value={formData.companyName}
+                  onChange={handleInputChange}
                 />
               </div>
               <div className="flex justify-between lg:gap-9 lg:flex-nowrap flex-wrap">
                 <InputField
-                  label="Email *"
-                  placeHolder="Enter your email address"
-                />
-                <InputField
-                  label="Company Name"
-                  placeHolder="Enter your company name"
+                name="message"  // Pass the name prop
+                  label="Message"
+                  placeHolder="Enter your message"
+                  value={formData.message}
+                  onChange={handleInputChange}
                 />
               </div>
             </div>
