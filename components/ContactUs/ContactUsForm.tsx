@@ -67,12 +67,19 @@ const clearInputField = () => {
         "http://localhost:3000/api/contact-us",
         formData
       );
-      console.log("Form submitted successfully: ", formData);
+
+      const emailResponse = await axios.post(
+        "http://localhost:3000/api/send",
+        JSON.parse(formData.email)
+      );
+
+      console.log("Form submitted successfully ", formData);
       clearInputField();
     } catch (error) {
       console.log("Error submitting form", error);
     }
   };
+
   return (
     <div
       id="contact-form"
