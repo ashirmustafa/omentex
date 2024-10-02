@@ -5,7 +5,7 @@ import React from "react";
 const Projects = () => {
   return (
     <>
-      <HeroSectionLayout scrollHref="#portfolio">
+      <HeroSectionLayout>
         <ProjectsHeroSection />
       </HeroSectionLayout>
     </>

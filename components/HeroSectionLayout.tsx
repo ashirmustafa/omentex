@@ -3,12 +3,12 @@ import FloatingScrollButton from "./FloatingScrollButton";
 
 interface HeroSectionLayoutProps {
   children: React.ReactNode;
-  scrollHref: string;
+  scrollHref?: string;
 }
 
 const HeroSectionLayout: React.FC<HeroSectionLayoutProps> = ({
   children,
-  scrollHref,
+  scrollHref = "",
 }) => {
   // bg-[#fffff2ff2]
   return (
@@ -18,7 +18,7 @@ const HeroSectionLayout: React.FC<HeroSectionLayoutProps> = ({
         href={scrollHref}
         className="absolute bottom-5 right-[50%] text-secondary"
       >
-        <FloatingScrollButton />
+        {scrollHref === "" ? null : <FloatingScrollButton />}
       </Link>
     </div>
   );
