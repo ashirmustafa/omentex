@@ -10,16 +10,16 @@ const projects = [
     imgSrc: "/safra.png",
     link: "/projects/project-one",
   },
-  {
-    title: "Favarr",
-    imgSrc: "/favarr.png",
-    link: "/projects/project-two",
-  },
-  {
-    title: "Soloon",
-    imgSrc: "/soloon.png",
-    link: "/projects/project-three",
-  },
+  // {
+  //   title: "Favarr",
+  //   imgSrc: "/favarr.png",
+  //   link: "/projects/project-two",
+  // },
+  // {
+  //   title: "Soloon",
+  //   imgSrc: "/soloon.png",
+  //   link: "/projects/project-three",
+  // },
   {
     title: "MediaFire",
     imgSrc: "/mediafire.png",
@@ -45,11 +45,11 @@ const projects = [
     imgSrc: "/indexcore.png",
     link: "/projects/project-three",
   },
-  {
-    title: "Owl",
-    imgSrc: "/owl.png",
-    link: "/projects/project-three",
-  },
+  // {
+  //   title: "Owl",
+  //   imgSrc: "/owl.png",
+  //   link: "/projects/project-three",
+  // },
   {
     title: "Abronn",
     imgSrc: "/abronn.png",
