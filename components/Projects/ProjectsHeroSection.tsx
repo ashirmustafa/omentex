@@ -65,6 +65,11 @@ const projects = [
     imgSrc: "/dubaiAd.png",
     link: "/projects/project-three",
   },
+  {
+    title: "Dubai Advertising Media",
+    imgSrc: "/dubaiAdMedia.png",
+    link: "/projects/project-three",
+  },
 ];
 
 const ProjectsHeroSection = () => {
