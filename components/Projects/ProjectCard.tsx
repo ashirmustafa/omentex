@@ -14,14 +14,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, imgSrc, link }) => {
         src={imgSrc} 
         alt={title} 
         width={600} 
-        height={400} 
-        className="w-full h-48 object-cover"
+        height={600} 
+        className="w-full h-72 object-cover"
       />
       <div className="p-4">
         <h2 className="text-xl font-semibold mb-2">{title}</h2>
-        <Link href={link}>
+        {/* <Link href={link}>
           <div className="text-primary hover:underline">View Project</div>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
