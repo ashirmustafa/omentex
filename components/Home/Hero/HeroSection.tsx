@@ -14,7 +14,7 @@ const HeroSection = () => {
             secondText="limits of technology"
           />
           <p className="text-primaryLight text-center md:mt-5 mt-3 md:text-base lg:text-xl text-sm md:px-0 px-10">
-            From AI-powered finance solutions to innovative cloud services.
+          We build digital platforms that drive business growth.
           </p>
           <div className="flex md:flex-row flex-col md:gap-10 gap-6">
             <button className="mt-6 flex text-secondary font-medium border w-[190px] justify-center py-2 items-center gap-2 rounded-[60px] hover:bg-secondary hover:text-primary transition-all md:text-base text-sm">
