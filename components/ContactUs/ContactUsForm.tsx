@@ -135,13 +135,6 @@ const clearInputField = () => {
               </div>
               <div className="flex justify-between lg:gap-9 lg:flex-nowrap flex-wrap">
                 <InputField
-                name="email"  // Pass the name prop
-                  label="Email *"
-                  placeHolder="Enter your email address"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                />
-                <InputField
                 name="companyName"  // Pass the name prop
                   label="Company Name"
                   placeHolder="Enter your company name"

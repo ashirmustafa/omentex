@@ -51,7 +51,7 @@ const Footer = () => {
             <h4 className="text-2xl font-bold">Contact Us:</h4>
             <div>
               <h6 className="text-lg font-bold">Address:</h6>
-              Osborn House Osborn Terrace London SE3 9GB, United Kingdom
+              P#486, Sehgal City, Samundari Road, Faisalabad
             </div>
             <div>
               <h6 className="text-lg font-bold">Address 2:</h6>
@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
             <div>
               <h6 className="text-lg font-bold">Email:</h6>
-              info@omentex.com
+              omentexofficial@gmail.com
             </div>
             <div>
               <h6 className="text-lg font-bold">Phone:</h6>
