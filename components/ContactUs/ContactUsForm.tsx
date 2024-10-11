@@ -70,10 +70,6 @@ const ContactUsForm = () => {
               </div>
               <div className="flex justify-between lg:gap-9 lg:flex-nowrap flex-wrap">
                 <InputField
-                  label="Email *"
-                  placeHolder="Enter your email address"
-                />
-                <InputField
                   label="Company Name"
                   placeHolder="Enter your company name"
                 />
