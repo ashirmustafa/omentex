@@ -20,28 +20,24 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 
   return (
     <div
-      className="flex gap-3 px-5 py-7 bg-secondary rounded-md shadow-lg lg:max-w-[32%] w-full"
+      className="flex gap-3 px-5 py-7 bg-[#323232] hover:bg-secondary rounded-md shadow-lg lg:max-w-[32%] w-full hover:scale-95 transition-all text-secondary hover:text-primary self-stretch"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Render the icon using JSX */}
-      <Icon className="text-4xl -mt-1" />
-      <div>
+      <Icon className="text-4xl -mt-1 " />
+      <div className="flex flex-col w-full">
         <div className="flex flex-col gap-2">
-          <h1
-            className={`text-xl font-bold select-none transition-all duration-500 ${
-              isHovered
-                ? "tracking-widest scale-105 translate-x-3 font-extrabold"
-                : ""
-            }`}
-          >
+          <h1 className="text-xl font-medium select-none">
             {title}
           </h1>
-          <p className="select-none pt-2">{description}</p>
+          <p className="select-none pt-2 ">{description}</p>
         </div>
-        <Link href={`services/${path}`} className="underline font-semibold">
-          Learn More
-        </Link>
+        <div className="flex justify-end self-end">
+          <Link href={'services/${path}'} className={'underline font-semibold text-[#323232]'}>
+            Learn More
+          </Link>
+        </div>
       </div>
     </div>
   );
