@@ -16,9 +16,8 @@ const ServicesSection = () => {
       <h1 className="text-6xl text-secondary font-bold pb-6 text-center">
         Our Services
       </h1>
-      <div className="flex flex-col gap-8">
-        <h1 className="text-3xl text-secondary font-bold">Development:</h1>
-        <div className="flex items-center justify-between gap-6 max-w-[1760px] w-full mx-auto flex-wrap">
+      <div className="flex flex-col gap-8 ">
+        <div className="flex items-center  gap-1 max-w-[1760px] w-full mx-auto flex-wrap">
           <ServiceCard
             path="uiux-design"
             title="UI/UX Design"
