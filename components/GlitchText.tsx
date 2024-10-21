@@ -4,9 +4,10 @@ import React, { useEffect, useState } from "react";
 interface GlitchTextProps {
   firstText: string;
   secondText: string;
+  className?: string;
 }
 
-const GlitchText: React.FC<GlitchTextProps> = ({ firstText, secondText }) => {
+const GlitchText: React.FC<GlitchTextProps> = ({ firstText, secondText, className }) => {
   const [glitch, setGlitch] = useState(false);
 
   useEffect(() => {
@@ -68,6 +69,8 @@ const GlitchText: React.FC<GlitchTextProps> = ({ firstText, secondText }) => {
       {/* Main text */}
       {firstText} <br />
       {secondText}
+      <div>{className}</div>
+      
     </motion.h1>
   );
 };

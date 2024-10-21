@@ -7,10 +7,9 @@
   --secondary-color: #fffff2;
   --primaryLight-color: #bfbfbf;
 }
-
 html {
   scroll-behavior: smooth;
-  background-color: var(--secondary-color);
+  background-color: #000000;
 }
 .slick-prev,
 .slick-next {

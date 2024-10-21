@@ -28,15 +28,13 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       <Icon className="text-4xl -mt-1 " />
       <div className="flex flex-col w-full">
         <div className="flex flex-col gap-2">
-          <h1
-            className={`text-xl font-medium select-none  `}
-          >
+          <h1 className="text-xl font-medium select-none">
             {title}
           </h1>
           <p className="select-none pt-2 ">{description}</p>
         </div>
         <div className="flex justify-end self-end">
-          <Link href={`services/${path}`} className={`underline font-semibold text-[#323232]`}>
+          <Link href={'services/${path}'} className={'underline font-semibold text-[#323232]'}>
             Learn More
           </Link>
         </div>

@@ -10,16 +10,16 @@ const projects = [
     imgSrc: "/safra.png",
     link: "/projects/project-one",
   },
-  // {
-  //   title: "Favarr",
-  //   imgSrc: "/favarr.png",
-  //   link: "/projects/project-two",
-  // },
-  // {
-  //   title: "Soloon",
-  //   imgSrc: "/soloon.png",
-  //   link: "/projects/project-three",
-  // },
+  {
+    title: "Favarr",
+    imgSrc: "/favarr.png",
+    link: "/projects/project-two",
+  },
+  {
+    title: "Soloon",
+    imgSrc: "/soloon.png",
+    link: "/projects/project-three",
+  },
   {
     title: "MediaFire",
     imgSrc: "/mediafire.png",

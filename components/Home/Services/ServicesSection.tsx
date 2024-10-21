@@ -13,11 +13,11 @@ const ServicesSection = () => {
       className="2xl:p-20 xl:p-14 lg:p-6 md:p-4 p-3 bg-primary"
       id="services"
     >
-      <h1 className="text-6xl text-secondary font-bold pb-6 text-center">
+      <h1 className="text-6xl text-secondary font-bold pb-6 text-center mb-6">
         Our Services
       </h1>
       <div className="flex flex-col gap-8 ">
-        <div className="flex items-center  gap-1 max-w-[1760px] w-full mx-auto flex-wrap">
+        <div className="flex items-center justify-center gap-1 max-w-[1200px] w-full mx-auto flex-wrap">
           <ServiceCard
             path="uiux-design"
             title="UI/UX Design"
@@ -55,7 +55,6 @@ const ServicesSection = () => {
             Icon={BsFillShareFill}
           />
         </div>
-        <hr className="w-full bg-primaryLight h-[2px]" />
       </div>
     </div>
   );
