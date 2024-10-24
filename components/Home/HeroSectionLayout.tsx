@@ -16,7 +16,7 @@ const HeroSectionLayout: React.FC<HeroSectionLayoutProps> = ({
       <div className="max-w-[1760px] w-full mx-auto">{children}</div>
       <Link
         href={scrollHref}
-        className="absolute bottom-5 right-[50%] text-secondary"
+        className="absolute bottom-5 right-[45%] md:right-[50%] text-secondary"
       >
         <FloatingScrollButton />
       </Link>

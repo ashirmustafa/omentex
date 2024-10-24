@@ -10,10 +10,10 @@ import { IoMdCart } from "react-icons/io";
 const ServicesSection = () => {
   return (
     <div
-      className="2xl:p-20 xl:p-14 lg:p-6 md:p-4 p-3 bg-primary"
+      className="2xl:p-20 xl:p-14 lg:p-6 md:p-4 p-3 bg-primary my-10 md:my-20"
       id="services"
     >
-      <h1 className="text-6xl text-secondary font-bold pb-6 text-center mb-6">
+      <h1 className="text-3xl md:text-6xl text-secondary font-bold pb-3 md:pb-6 text-center mb-6">
         Our Services
       </h1>
       <div className="flex flex-col gap-8 ">

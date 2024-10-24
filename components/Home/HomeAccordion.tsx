@@ -7,10 +7,10 @@ const HomeAccordion = () => {
     <AnimateOnLoad>
       <div className="relative select-none h-full overflow-hidden">
         <div className="flex justify-center flex-col m-auto my-20 max-w-[1200px]">
-            <h1 className="text-6xl font-bold text-secondary text-center">Frequently Asked Questions</h1>
-            <div className="flex flex-wrap my-12 w-full max-w-[1200px]">
+            <h1 className="text-3xl md:text-6xl font-bold text-secondary text-center">Frequently Asked Questions</h1>
+            <div className="flex flex-wrap my-12 w-full max-w-[1200px] px-3 md:px-0">
             <Accordion defaultExpandedKeys={["1"]}>
-                <AccordionItem key="1" aria-label="Accordion 1" title="What are the primary responsibilities of software developers?" className="text-secondary border-b">
+                <AccordionItem key="1" aria-label="Accordion 1" title="What are the primary responsibilities of software developers?" className="text-secondary border-b text-left">
                     <p>Software developers retrieve, store, and alter data to analyze a system’s requirements and capability. They design, program, build, deploy and maintain software using different skills and tools. Additionally, they meet with clients, determine needs, help develop, ensure usability, and complete quality assurance.</p>
                 </AccordionItem>
                 <AccordionItem key="2" aria-label="Accordion 2" title="What services do your talented and tech-savvy software developers offer?" className="text-secondary border-b">

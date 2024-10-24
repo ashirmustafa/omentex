@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar/Navbar";
 import AboutUsHeroSection from "@/components/AboutUs/AboutUsHero";
 import AboutUsOurVisionSection from "@/components/AboutUs/AboutUsVision";
 import AboutUsCounterSection from "@/components/AboutUs/AboutUsCounter";
@@ -12,6 +13,7 @@ const AboutUs = () => {
   return (
     <>
       <HeroSectionLayout scrollHref="#contact-form">
+        <Navbar />
         <AboutUsHeroSection />
       </HeroSectionLayout>
       <AboutUsOurVisionSection />
