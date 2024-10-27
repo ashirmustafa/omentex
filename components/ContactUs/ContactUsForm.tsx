@@ -70,12 +70,6 @@ const ContactUsForm = () => {
               </div>
               <div className="flex justify-between lg:gap-9 lg:flex-nowrap flex-wrap">
                 <InputField
-                  label="Company Name"
-                  placeHolder="Enter your company name"
-                />
-              </div>
-              <div className="flex justify-between lg:gap-9 lg:flex-nowrap flex-wrap">
-                <InputField
                   label="Email *"
                   placeHolder="Enter your email address"
                 />
@@ -83,6 +77,12 @@ const ContactUsForm = () => {
                   label="Company Name"
                   placeHolder="Enter your company name"
                 />
+              </div>
+              <div className="flex justify-between lg:gap-9 lg:flex-nowrap flex-wrap">
+                <div className="flex flex-col w-full">
+                  <label className="text-secondary">Message *</label>
+                  <textarea placeholder="Enter Your Message" className="bg-white placeholder:text-gray-700 px-4 py-2 border-gray-400 outline-none w-full"></textarea>
+                </div>
               </div>
             </div>
             <button
