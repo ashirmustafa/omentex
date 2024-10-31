@@ -9,7 +9,7 @@ const AboutUsCompanyValue = () => {
   return (
     <AnimateOnLoad>
         <div className="relative">
-            <h1 className="text-3xl md:text-6xl font-bold text-secondary max-w-[1200px] mt-12 text-center">Company Values</h1>
+            <h1 className="text-3xl md:text-6xl font-bold text-secondary mt-12 text-center w-full">Company Values</h1>
             <div className="grid grid-cols-1 px-3 md:px-0 md:grid-cols-2 m-auto mb-32 mt-12 max-w-[1200px]">
                 <div className="p-6 py-12 border border-slate-300 rounded-lg border-t-0">
                     <TbBulbFilled className="text-secondary text-6xl"/>

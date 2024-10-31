@@ -17,9 +17,9 @@ const HeroSection = () => {
             We build digital platforms that drive business growth.
           </p>
           <div className="flex md:flex-row flex-col md:gap-10 gap-6">
-            <button className="mt-6 flex text-secondary font-medium border w-[200px] justify-center py-2 items-center gap-2 rounded-[6px] hover:bg-secondary hover:text-primary transition-all md:text-base text-sm">
+            <a href="about-us/#WhyOmentex" className="mt-6 flex text-secondary font-medium border w-[200px] justify-center py-2 items-center gap-2 rounded-[6px] hover:bg-secondary hover:text-primary transition-all md:text-base text-sm">
               Why OMENTEX ?
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -4,6 +4,7 @@ import AboutUsHeroSection from "@/components/AboutUs/AboutUsHero";
 import AboutUsOurVisionSection from "@/components/AboutUs/AboutUsVision";
 import AboutUsCounterSection from "@/components/AboutUs/AboutUsCounter";
 import AboutUsCompanyValue from "@/components/AboutUs/AboutUsCompanyValue";
+import AboutUsWhyOmentex from "@/components/AboutUs/AboutUsWhyOmentex";
 import CustomSlider from "@/components/Slider";
 import AboutUsCommunication from "@/components/AboutUs/AboutUsCommunication";
 
@@ -19,6 +20,7 @@ const AboutUs = () => {
       <AboutUsOurVisionSection />
       <AboutUsCounterSection />
       <AboutUsCompanyValue />
+      <AboutUsWhyOmentex />
       <CustomSlider />
       <AboutUsCommunication />
     </>
