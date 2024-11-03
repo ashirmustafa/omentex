@@ -9,6 +9,7 @@ import HomeOurProjects from "@/components/Home/HomeOurProjects";
 import HomeAccordion from "@/components/Home/HomeAccordion";
 import ProjectCard from "@/components/Projects/ProjectCard";
 
+
 const projects = [
   {
     title: "Safra Tourism",
