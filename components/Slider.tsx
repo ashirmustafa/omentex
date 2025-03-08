@@ -55,20 +55,20 @@ const slides = [
 
 const CustomSlider: React.FC = () => {
   return (
-      <div className="max-w-[1200px] m-auto">
-        <h1 className="block m-auto text-center my-6 text-lg md:text-2xl text-secondary">{`Customers Who've Put Their Trust in Omentex`}</h1>
-        <Slider {...sliderSettings}>
-          {slides.map((slide) => (
-            <div key={slide.id} className="px-2">
-              <img
-                src={slide.imageUrl}
-                alt={slide.alt}
-                className="w-[150px] h-auto object-cover rounded-lg shadow-md"
-              />
-            </div>
-          ))}
-        </Slider>
-      </div>
+      // <div className="max-w-[1200px] m-auto">
+      //   <h1 className="block m-auto text-center my-6 text-lg md:text-2xl text-secondary">{`Customers Who've Put Their Trust in Omentex`}</h1>
+      //   <Slider {...sliderSettings}>
+      //     {slides.map((slide) => (
+      //       <div key={slide.id} className="px-2">
+      //         <img
+      //           src={slide.imageUrl}
+      //           alt={slide.alt}
+      //           className="w-[150px] h-auto object-cover rounded-lg shadow-md"
+      //         />
+      //       </div>
+      //     ))}
+      //   </Slider>
+      // </div>
   );
 };
 
