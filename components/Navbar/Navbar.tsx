@@ -59,10 +59,16 @@ const Navbar = () => {
               <NavLink path="/projects" label="Projects" />
               <button
                 className="text-lg text-primaryLight hover:text-secondary flex items-center justify-center"
-                onClick={() => router.push("/order-now")}
+                onClick={() => router.push("https://www.fiverr.com/s/yvoRExG")}
               >
                 Order Now
               </button>
+              {/* <button
+                className="text-lg text-primaryLight hover:text-secondary flex items-center justify-center"
+                onClick={() => router.push("/order-now")}
+              >
+                Order Now
+              </button> */}
             </div>
           </div>
         </div>
