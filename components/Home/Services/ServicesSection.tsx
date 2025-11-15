@@ -4,8 +4,9 @@ import { IoLogoDesignernews } from "react-icons/io5";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { FaMobileScreen } from "react-icons/fa6";
 import { TbTargetArrow } from "react-icons/tb";
-import { BsFillShareFill } from "react-icons/bs";
+import { BsFillShareFill, BsGraphUp } from "react-icons/bs";
 import { IoMdCart } from "react-icons/io";
+import { BiCloud } from "react-icons/bi";
 
 const ServicesSection = () => {
   return (
@@ -37,16 +38,16 @@ const ServicesSection = () => {
             Icon={IoMdCart}
           />
           <ServiceCard
-            path="seo-optimzation"
-            title="SEO Optimization"
-            description="Boost your online visibility and drive traffic with our expert SEO optimization services."
-            Icon={TbTargetArrow}
+            path="trading-bots"
+            title="Trading Bots"
+            description="Boost your forex trading with our advanced, automated trading bots."
+            Icon={BsGraphUp}
           />
           <ServiceCard
-            path="mobile-apps"
-            title="Mobile Applications"
-            description="Discover the full potential of your business with our custom mobile hybrid applications."
-            Icon={FaMobileScreen}
+            path="cloud-engineering"
+            title="Cloud Engineering"
+            description="Optimize your business operations with our expert cloud engineering solutions."
+            Icon={BiCloud}
           />
           <ServiceCard
             path="strategic-consultation"
